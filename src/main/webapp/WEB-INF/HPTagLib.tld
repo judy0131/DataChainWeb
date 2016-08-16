@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>p</short-name>
+    <uri>/HPTagLib</uri>
+
+    <tag>
+        <name>pageFormat</name>
+        <tag-class>com.cnic.bigdata.common.tag.PageFormat</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>digit</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>stringTrip</name>
+        <tag-class>com.cnic.bigdata.common.tag.StringTrip</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>str</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>iteratorTree</name>
+        <tag-class>com.cnic.bigdata.common.tag.IteratorTree</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>buckets</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+</taglib>

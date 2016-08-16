@@ -1,0 +1,465 @@
+body, h1, h2, h3, h4, h5, i, div {
+    font-family: "微软雅黑", "Microsoft Yahei", "Hiragino Sans GB", tahoma, arial;
+}
+
+ul, ol, li {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    vertical-align: baseline;
+    list-style: none
+}
+
+/************************************************顶部*********************************************/
+.ds-top-header {
+    position: relative;
+    height: 28px;
+    font-size: 12px;
+    zoom: 1;
+    background-color: #00a2ca;
+    z-index: 109;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.a-spacing {
+    display: inline;
+    width: 1px;
+    height: 14px;
+    margin: 8px 10px 0;
+    overflow: hidden;
+    background-color: #1aabcf;
+}
+
+.ds-top-header a, .ds-top-header a:visited {
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ds-top-header a:hover {
+    color: #7ed1e8;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ds-middle-header {
+    border-left: 2px #00a2c9 solid;
+    padding-right: 10px;
+}
+
+.ds-header-nav ul li {
+    display: block;
+}
+
+.ds-header-nav ul li a {
+    margin-left: 38px;
+    text-decoration: none;
+    float: left;
+    height: 53px;
+    font-size: 14px;
+    color: #000;
+    line-height: 52px;
+}
+
+.ds-header-nav ul li a:hover {
+    color: #00a1ca;
+    padding: 0px;
+}
+
+.ds-header-nav .cur a {
+    border-bottom: 2px solid #00a1ca;
+    color: #00a1ca;
+}
+
+.ds-page-title {
+    color: #00a1ca;
+    font-size: 16px;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 16px;
+    border-left: 2px solid #00a1ca;
+    text-indent: 6px;
+}
+
+/************************************************主体*********************************************/
+.ds-main {
+    background-color: #f6f6f8;
+}
+
+.ds-alink {
+    color: #00a1ca;
+}
+
+.ds-alink:hover {
+    color: #666;
+}
+
+/************************************************左侧导航*********************************************/
+.ds-left {
+    background-color: #f6f6f8;
+    padding-right: 0px;
+}
+
+.ds-left-nav {
+    margin: 20px 0px 0px 0px;
+}
+
+.ds-left-nav dl dt {
+    color: #999;
+    height: 32px;
+    line-height: 32px;
+}
+
+.ds-left-nav dl dd {
+    height: 32px;
+    line-height: 32px;
+}
+
+.ds-left-nav a {
+    display: block;
+    padding-left: 10px;
+    color: #666;
+    width: 100%;
+}
+
+.ds-left-nav a:hover {
+    background-color: #eaeaea;
+}
+
+.ds-left-nav .curr {
+    background-color: #fff;
+    color: #000;
+}
+
+.ds-left-nav .curr a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.ds-left-nav a:hover {
+    background-color: #eaeaea;
+    color: #000;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+/************************************************右侧内容*********************************************/
+.ds-content {
+    font-size: 13px;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.content-title {
+    padding-top: 18px;
+    height: 50px;
+}
+
+.ds-td-operation a:hover {
+    text-decoration: none;
+}
+
+.content-title h3 {
+    height: 23px;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+    position: relative;
+}
+
+.ds-inc-page {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.ds-inc-page a {
+    color: #00a1ca;
+}
+
+.ds-inc-page a:hover {
+    padding: 0px;
+}
+
+.ds-inc-page .cur-display {
+    margin-top: 20px;
+    background: url(../images/page/T1OVJmFA8nXXcbU07.-12-12.gif) 6px 6px no-repeat;
+    padding-left: 28px;
+    border-bottom: solid 1px #eeeeee;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.score-con em {
+    color: #ffa300;
+}
+
+.ds-content-block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ds-content-panel {
+    border: solid 1px #eeeeee;
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 30px 10px;
+}
+
+.ds-content-panel-header {
+    padding: 15px 0 10px 30px;
+    margin: 0;
+    font-size: 16px;
+    color: #000000;
+    border-bottom: solid 2px #00a1cc;
+}
+
+.ds-content-header-h2 {
+    font-size: 18px;
+    margin: 20px 0 8px 0
+}
+
+.ds-header-block {
+    height: 38px;
+    line-height: 39px;
+    padding-left: 15px;
+    overflow: hidden;
+    border-left: solid 5px #39ABDD;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Microsoft Yahei", "微软雅黑", "Comic Sans MS", "MS PGothic", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.ds-header-block-lite {
+    height: 38px;
+    line-height: 39px;
+    padding-left: 15px;
+    overflow: hidden;
+    border-left: solid 2px #00a2c9;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Microsoft Yahei", "微软雅黑", "Comic Sans MS", "MS PGothic", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #666;
+}
+.ds-header-block .header-tool {
+    float: right;
+    margin-right: 10px;
+}
+
+.ds-search-panel {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #fbfaf8;
+    margin-bottom: 10px;
+    border: 1px dashed lightblue;
+}
+
+.ds-search-order {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.ds-search-order a {
+    color: #00a2c9;
+    padding: 3px 15px;
+}
+
+.ds-search-order .cur {
+    color: #fff;
+    background-color: #00a2c9;
+}
+
+.ds-search-panel .order {
+    color: #666666;
+}
+
+.ds-search-result .element-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0px;
+}
+
+.ds-search-result .element-table .spanner {
+    width: 100%;
+    border-bottom: 2px dotted #eee;
+    padding-top: 10px;
+}
+
+.ds-search-result .element-table th {
+    padding: 3px 0px;
+    vertical-align: top;
+    line-height: 1.7;
+    color: #666;
+    font-weight: normal;
+}
+
+.ds-search-result .element-table td {
+    padding: 3px 0px;
+    vertical-align: top;
+    line-height: 1.7;
+}
+
+.ds-search-result .element-table .title {
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+.ds-search-result .element-table .title > a {
+    color: #00a1ca;
+}
+
+.ds-search-result .element-table .title > a:hover {
+    cursor: pointer;
+}
+
+/************************************************底部*********************************************/
+.ds-footer {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.ds-footer a, .ds-footer a:hover {
+    color: #666;
+    padding: 0px 5px;
+}
+
+.ds-footer .other-links a, .ds-footer .other-links a:hover {
+    color: #b3b3b3;
+    padding: 0px 5px;
+}
+
+/************************************************其他*********************************************/
+.divider {
+    border-bottom: 2px dotted #eeeeee;
+    margin: 15px 0px;
+}
+
+.blue-icon {
+    font-size: 18px;
+    color: #00a1ca;
+}
+
+.green-icon {
+    font-size: 18px;
+    color: #47a447;
+}
+
+.grey-icon {
+    font-size: 18px;
+    color: #333;
+}
+
+.red-icon {
+    font-size: 18px;
+    color: #d2322d;
+}
+
+.small-a {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.ds-well a {
+    color: #00a1ca;
+}
+
+.ds-icon {
+    height: 100px;
+    width: 80px;
+    background-image: url("../images/property_icon_101.png");
+}
+
+.ds-icon-pdf {
+   background-position:  -924px -0px
+}
+
+.ds-icon-doc {
+    background-position:  -462px -0px
+}
+
+.ds-icon-xls {
+    background-position:  -308px -0px
+}
+
+.ds-icon-rar {
+    background-position:  -2142px -0px
+}
+
+.ds-icon-txt {
+    background-position: -1072px -0px;
+}
+
+.ds-icon-zip {
+    background-position:  -154px -0px
+}
+
+.ds-icon-other {
+    background-position:  -0px -0px
+}
+
+.ds-info-chart div {
+    padding:2px 0px;
+}
+
+.ds-tab {
+    margin-top: 35px;
+    position: relative;
+}
+
+.ds-tab ul {
+    position: static;
+    height: auto;
+    overflow: visible
+    width: 100%;
+    list-style: none;
+}
+
+
+.ds-tab ul li {
+    float: left;
+    display: inline;
+    overflow: visible
+}
+
+.ds-tab li .ds-tab-current, .ds-tab li .ds-tab-current:hover{
+    background: #fff;
+    border: solid 1px #ddd;
+    border-top: solid 2px #00a2ca;
+    border-bottom: 0px;
+    padding: 11px 40px 12px;
+    color: #000;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.ds-tab li>a {
+    border: solid 1px #ddd;
+    background: #fbfaf8;
+    height: 22px;
+    margin-left: -1px;
+    padding: 12px 40px;
+    color: #666
+}
+
+
+.ds-tab li>a:hover {
+    border: solid 1px #ddd;
+    background: #eee;
+    height: 22px;
+    margin-left: -1px;
+    padding: 12px 40px;
+    color: #666
+}
+
+
+
+
+
+

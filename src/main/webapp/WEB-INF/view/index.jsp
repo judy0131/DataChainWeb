@@ -27,22 +27,34 @@
 </HEAD>
 <body>
 <%--<h2>User Action!</h2>--%>
-<div class="col-lg-3" >
-    <div class="no-padding form-pannel" style="padding-top: 250px; padding-left: 250px">
-        <form action="${ctx}/doAction" method="get">
+<div class="col-lg-12" style="height: 500px">
+    <div class="no-padding form-pannel" align="center" style="height: 500px">
+        <div class="form-group" align="center" style="width:200px;padding-top: 350px">
+            <button onclick="javascript:action()" class="btn btn-primary btn-lg btn-block">生成日志</button>
+        </div>
 
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-lg btn-block">点击</button>
-            </div>
-
-            <div style="float:left;padding-top: 25px;width: 80%">
-                ${status}
-            </div>
-
-        </form>
     </div>
 </div>
 </body>
+
+<script src="${ctx}/resources/bootstrap/js/jquery.min.js"></script>
+<script src="${ctx}/resources/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${ctx}/resources/js/pgwmodal.min.js"></script>
+<script type="text/javascript" src="${ctx}/resources/js/global.js"></script>
+<script type="text/javascript">
+    function action(){
+        $.ajax({
+            url:'${ctx}/doAction',
+            success: function(data){
+                alert("Successful!")
+            },
+            error: function(){
+                alert("Error!");
+            }
+        });
+    }
+
+</script>
 
 
 </html>

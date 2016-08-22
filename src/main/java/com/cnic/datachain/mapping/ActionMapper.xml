@@ -7,9 +7,6 @@
 
     <resultMap id="Action" type="Action" autoMapping="true">
         <id column="id" property="id" />
-        <association property="node" javaType="Node" autoMapping="true">
-            <id column="id" property="id" />
-        </association>
     </resultMap>
 
     <select id="countAction" parameterType="Action" resultType="int">

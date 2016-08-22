@@ -19,10 +19,12 @@ public class ActionServiceImpl extends BaseService implements ActionService{
     @Resource
     private ActionDao actionDao;
 
+    @Override
     public int CreateAction(Action action){
         return 1;
     }
 
+    @Override
     public TableElement<Action> findActionByPage(PageFacade pageRequest, Action action){
 
         List<Action> dataApplications = actionDao.selectActionByPage(super.injectBeanWithMap(pageRequest, action));

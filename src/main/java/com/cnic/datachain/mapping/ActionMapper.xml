@@ -21,7 +21,6 @@
     <select id="selectActionByPage" parameterType="hashmap" resultMap="Action">
         SELECT *
         FROM userAction
-        ORDER BY userAction.update_at DESC
         <if test="start!=null">
             LIMIT #{start}, #{offset}
         </if>
@@ -30,7 +29,7 @@
     <select id="selectAllAction" parameterType="Action" resultMap="Action">
         SELECT *
         FROM userAction
-        ORDER BY userAction.update_at DESC
+        ORDER BY userAction.create_at DESC
     </select>
 
 </mapper>

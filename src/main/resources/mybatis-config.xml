@@ -17,7 +17,7 @@
     </settings>
 
     <typeAliases>
-        <!--<typeAlias alias="Action" type="com.cnic.datachain.entity.Action" />-->
+        <typeAlias alias="Action" type="com.cnic.datachain.entity.Action" />
     </typeAliases>
 
 </configuration>

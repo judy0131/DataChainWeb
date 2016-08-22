@@ -13,6 +13,6 @@
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <!--<import resource="spring-mybatis.xml"/>-->
+    <import resource="spring-mybatis.xml"/>
 
 </beans>

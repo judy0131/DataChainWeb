@@ -25,7 +25,7 @@ public class IndexController extends BaseController{
 
     @RequestMapping(value = "/doAction", method = RequestMethod.GET)
     public String doAction(HttpServletRequest request) {
-        logger.info(UUIDGenerator.getUUID() + ":" + new Date(System.currentTimeMillis()));
+        logger.info(UUIDGenerator.getUUID());
         //request.setAttribute("status", "successful");
         return "redirect:/index";
     }

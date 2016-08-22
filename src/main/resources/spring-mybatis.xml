@@ -50,12 +50,12 @@ http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-		<property name="mapperLocations" value="classpath:com/cnic/datachain/mapping/*Mapper.xml" />
+		<property name="mapperLocations" value="classpath:com/cnic/datachain/mapping/*.xml" />
         <property name="configLocation" value="classpath:mybatis-config.xml"></property>
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.cnic.bigdata.dao" />
+		<property name="basePackage" value="com.cnic.datachain.dao" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 

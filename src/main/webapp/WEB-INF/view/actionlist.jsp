@@ -46,13 +46,6 @@
 
 <BODY>
 
-<div class="row bordered dx-nav-path">
-    <ol class="breadcrumb col-xs-12 col-md-12" >
-        <li><a href="${ctx}/index">产品服务</a></li>
-        <li class="active">MapReduce-集群列表</li>
-    </ol>
-</div>
-
 <div class="row well" style="border:none;">
     <div class="col-xs-12 col-md-12 inner" >
 
@@ -83,9 +76,6 @@
                 </div>
             </div>
 
-            <div class="form-group">
-                <button class="btn btn-primary button-glen" style="margin-left:20px;" onclick="releaseSelectedCluster()">释放</button>
-            </div>
         </form>
     </div>
 </div>
@@ -117,7 +107,7 @@
                 {
                     "sDefaultContent": "",
                     "fnRender": function (obj) {
-                        return getFormatDay(obj.aData.date);
+                        return obj.aData.logDate;
                     },
                     "sClass": "center",
                     "bSortable": false
@@ -125,7 +115,7 @@
                 {
                     "sDefaultContent": "",
                     "fnRender": function (obj) {
-                        return obj.aData.time;
+                        return obj.aData.logTime;
                     },
                     "sClass": "center",
                     "bSortable": false
@@ -133,7 +123,7 @@
                 {
                     "sDefaultContent": "",
                     "fnRender": function (obj) {
-                        return obj.aData.priority;
+                        return obj.aData.logPriority;
                     },
                     "sClass": "center",
                     "bSortable": false
@@ -141,7 +131,7 @@
                 {
                     "sDefaultContent": "",
                     "fnRender": function (obj) {
-                        return obj.aData.class;
+                        return obj.aData.logClass;
                     },
                     "sClass": "center",
                     "bSortable": false
@@ -149,7 +139,7 @@
                 {
                     "sDefaultContent": "",
                     "fnRender": function (obj) {
-                        return obj.aData.line;
+                        return obj.aData.logLineNumber;
                     },
                     "sClass": "center",
                     "bSortable": false
@@ -157,7 +147,7 @@
                 {
                     "sDefaultContent": "",
                     "fnRender": function (obj) {
-                        return obj.aData.method;
+                        return obj.aData.logMethod;
                     },
                     "sClass": "center",
                     "bSortable": false
@@ -165,7 +155,7 @@
                 {
                     "sDefaultContent": "",
                     "fnRender": function (obj) {
-                        return obj.aData.message;
+                        return obj.aData.logMessage;
                     },
                     "sClass": "center",
                     "bSortable": false
@@ -197,7 +187,6 @@
             "fnServerData": function (sSource, aoData, fnCallback) {
 
                 aoData = JSON.stringify(aoData);
-                var userId = $("#userId").val();
                 $.ajax({
                     "type": "get",
                     "contentType": "application/json",

@@ -17,7 +17,7 @@ import java.util.Date;
 @RequestMapping
 public class IndexController extends BaseController{
 
-    @RequestMapping(value = {"/index"})
+    @RequestMapping
     public String index(HttpServletRequest request) {
         //logger.info("visits page login.");
         return "index";

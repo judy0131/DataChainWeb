@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by xjzhu@cnic.cn on 2016/8/22.
@@ -19,6 +20,12 @@ public class resultController extends BaseController {
 
     @Resource
     private ActionService actionService;
+
+    @RequestMapping
+    public String index(HttpServletRequest request) {
+        //logger.info("visits page login.");
+        return "actionlist";
+    }
 
     @RequestMapping(value = "/actionList")
     public @ResponseBody

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cnic.datachain.dao.AccessLogDao">
+
+    <resultMap id="AccessLog" type="AccessLog" autoMapping="true">
+        <id column="id" property="id" />
+    </resultMap>
+
+    <select id="countAccessLog" parameterType="AccessLog" resultType="int">
+        SELECT count(*)
+        FROM apache_access_log
+
+    </select>
+
+    <select id="selectAccessLogByPage" parameterType="hashmap" resultMap="AccessLog">
+        SELECT *
+        FROM apache_access_log
+        <if test="start!=null">
+            LIMIT #{start}, #{offset}
+        </if>
+    </select>
+
+    <select id="selectAllAccessLog" parameterType="AccessLog" resultMap="AccessLog">
+        SELECT *
+        FROM apache_access_log
+        ORDER BY apache_access_log."timestamp" ASC
+    </select>
+
+</mapper>

@@ -18,6 +18,7 @@
 
     <typeAliases>
         <typeAlias alias="Action" type="com.cnic.datachain.entity.Action" />
+        <typeAlias alias="AccessLog" type="com.cnic.datachain.entity.AccessLog" />
     </typeAliases>
 
 </configuration>

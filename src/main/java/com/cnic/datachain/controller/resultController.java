@@ -1,8 +1,10 @@
 package com.cnic.datachain.controller;
 
+import com.cnic.datachain.entity.AccessLog;
 import com.cnic.datachain.entity.Action;
 import com.cnic.datachain.entity.vo.PageFacade;
 import com.cnic.datachain.entity.vo.TableElement;
+import com.cnic.datachain.service.AccessLogService;
 import com.cnic.datachain.service.ActionService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,9 @@ public class resultController extends BaseController {
     @Resource
     private ActionService actionService;
 
+    @Resource
+    private AccessLogService accessLogService;
+
     @RequestMapping
     public String index(HttpServletRequest request) {
         //logger.info("visits page login.");
@@ -36,5 +41,19 @@ public class resultController extends BaseController {
         return pageResponse;
     }
 
+    @RequestMapping(value = "/accesslog")
+    public String accessLog(HttpServletRequest request) {
+        //logger.info("visits page login.");
+        return "accesslog";
+    }
+
+    @RequestMapping(value = "/accessLogList")
+    public @ResponseBody
+    TableElement<AccessLog> accessLogList(String aoData, AccessLog accessLog) {
+        PageFacade pageRequest = super.preparedPageParam(aoData);
+        TableElement<AccessLog> pageResponse = accessLogService.findAccessLogByPage(pageRequest, accessLog);
+
+        return pageResponse;
+    }
 
 }

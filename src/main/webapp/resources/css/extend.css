@@ -621,3 +621,11 @@ position:relative;background-color:rgb(227,232,247);border:1px solid #d4d4d4;-we
 	border:1px solid #94a0b4;
 	color:#000
 }
+
+.tdStyle{
+	table-layout: fixed;WORD-BREAK: break-all; WORD-WRAP: break-word;
+	width: 50px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap
+}
